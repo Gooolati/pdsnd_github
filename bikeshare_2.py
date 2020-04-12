@@ -62,8 +62,8 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     
-    #do cases for all
     
+    #declares DF for csv that user chose
     if (city == 'chicago'):
         df = pd.read_csv(r'D:\MFE Prep\PDSND\Project2 Files\bikeshare-2\chicago.csv')
     elif (city == 'new york city'):
@@ -74,6 +74,7 @@ def load_data(city, month, day):
     df['Month'] = pd.to_datetime(df['Start Time']).dt.month
     df['Day'] = pd.to_datetime(df['Start Time']).dt.day
     
+    #leave out month/day filter if user selected all
     if (month != 0):
         df = df[(df.Month == month)]
     if (day != 0):
