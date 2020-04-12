@@ -28,7 +28,7 @@ def get_filters():
         city = str(input('Would you like to see data for Chicago, New York City, or Washington?\n')).lower()
 
     # get user input for month (all, january, february, ... , june)
-    monthArr = np.arange(-1, 7)
+    monthArr = np.arange(-1, 7, 1)
     month = 14
     
     while (month not in monthArr):
