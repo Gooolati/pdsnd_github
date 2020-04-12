@@ -6,6 +6,7 @@ Project 3 - Posting Work on Github
 
 ### Description
 This project is used to demonstrate our ability to effectively use Github
+to implement version control for our code.
 
 ### Files used
 bikeshare_2.py = python code used to analyze the datasets
