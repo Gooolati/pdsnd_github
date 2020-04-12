@@ -9,8 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 
-##make everything lower case after entered
-##allow ability to enter month as string
+#function to obtain inputs from user
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -49,7 +48,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+#applies user's filters to data
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -83,7 +82,7 @@ def load_data(city, month, day):
     return df
 
 
-
+#gets time stats of filtered data
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -108,7 +107,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#gets station stats of filtered data
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -132,7 +131,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#gets trip stats for filtered data
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -150,7 +149,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#gets user stats for filtered data
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -184,7 +183,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#run script
 def main():
     while True:
         city, month, day = get_filters()
