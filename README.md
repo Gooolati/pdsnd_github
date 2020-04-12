@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+12Apr2020
 
 ### Project Title
-Replace the Project Title
+Project 3 - Posting Work on Github
 
 ### Description
-Describe what your project is about and what it does
+This project is used to demonstrate our ability to effectively use Github
 
 ### Files used
-Include the files used
+bikeshare_2.py = python code used to analyze the datasets
+chicago.csv = dataset for chicago
+new_york_city.csv = dataset for nyc
+washington.csv = dataset for washington
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Link to repo that was cloned for this project:
+https://github.com/udacity/pdsnd_github
 
